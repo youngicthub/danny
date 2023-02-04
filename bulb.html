@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Bulb on an off </title>   
+
+</head>
+<style>
+    body{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .bulbBTN{
+        width: 400px;
+        height: 250px;
+        border-radius: 15px;
+        background-color: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* transform: translate(40%, 50%); */
+    }
+    .bulbBTN p{
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .bulbBTN button{
+        /* padding: 6px; */
+        font-size: 14px;
+        border-radius: 10px;
+        margin: 3px;
+        /* margin: 10px; */
+    }
+
+</style>
+<body> 
+
+    <div class="bulbBTN">
+
+        <p> Bulb on and off </p>
+
+<button onclick="document.getElementById('myBulb').src='/pic_bulbon.gif' "> Click to turn on bulb</button>
+<img id="myBulb" src="/pic_bulboff.gif" alt="">
+<button onclick="document.getElementById('myBulb').src='/pic_bulboff.gif' "> click to turn off bulb</button>
+
+    </div>
+
+
+
+
+</body>
+

@@ -1,0 +1,149 @@
+
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(/assets/img/backgroundLogin.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica;
+}
+
+.containerLogin{
+    padding: 20px;
+    background-color: black;
+    margin: 20px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px white;
+    
+}
+
+.containerLogin h1{
+    font-size: 25px;
+    margin-top: -1%;
+    font-weight: bolder;
+}
+
+
+#newUser{
+    top: 0;
+    font-size: 16px;
+}
+#newUser a{
+    text-decoration: none;
+    color: red;
+}
+
+.loginInput p{
+    font-size: 14px;
+
+    font-weight: bolder;
+
+}
+
+.loginInput input{
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 1.6%;
+    border: none;
+    padding: 3px;
+    /* box-shadow: 0 0 10px white; */
+    width: 85%;
+    height: 25px;
+    transition: all 0.1s ease-out;
+}
+
+.loginInput input:focus{
+    box-shadow: 0 2px 3px #ccc;
+    border-bottom: 0.25em solid #4f5050;
+    top:-2px;
+}
+
+
+
+#signIn{
+    padding: 5px;
+    margin-top: 3.6%;
+    /* margin: 5px; */
+    text-decoration: none;
+    background: 	#FF0000;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffff;
+    border-radius: 10px;
+}
+
+
+
+#or{
+    padding: 10px;
+}
+
+
+#icons{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: auto;
+}
+
+
+i{
+    padding: 3px;
+    margin: 0;
+    border-radius: 10px;
+}
+i:hover {
+    background: white;
+    color: black;
+}
+
+
+
+.animateDis{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: white;
+    animation-delay: 10s;
+    animation: animate 5s linear infinite;
+    transform: scale(0);
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+@keyframes animate {
+    100%{
+        transform: scale(0.5);
+        opacity: 0.1;
+    }
+}
+
+
+.animateDis1{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    animation: animateBTN 10s linear infinite;
+    /* animation-delay: 5s; */
+    border-radius: 50%;
+    margin-left: 65%;
+    margin-top: 10%;
+}
+
+@keyframes animateBTN {
+    100%{
+        transform: translate(0, 200px);
+        animation-delay: 5s;
+    }
+}
